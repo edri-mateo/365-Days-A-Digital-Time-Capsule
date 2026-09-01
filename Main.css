@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: #393467; /* HEX */ 
+    justify-content: center; /* centers horizontally */ 
+    align-items: center; /* centers vertically */ 
+
+    background-repeat: no-repeat; 
+    overflow: hidden;
+}
+
+.container{ 
+    margin: 0; 
+    padding: 0;
+}
+
+.background img{
+    /* placement */
+    position: absolute;
+    bottom: 0; /* stick to the bottom */
+    left: 50%; /* center horizontally */
+    transform: translateX(-50%);
+
+    /* styling */
+    width: 100%; /* make it span the width of the screen */
+    max-width: 100%; /* prevent overflow */
+    height: auto; /* keep aspect ratio */
+}
+
+.startingText{
+    /* placement */
+    position: absolute;
+    top: -100px; /* start above the screen */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 2s ease-out; /* animation */
+}
+
+.displayButton{
+    /* placement */
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; /* initially hidden */
+}
+    
+#startButton{
+    /* placement */
+    position: absolute;
+    top: 65%;
+    left: 49.3%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+
+    width: 155px;
+    height: 70px;
+    opacity: 0; /* want it to be hidden (only for clicking purposes) */
+    display: none;
+}
+
+/* hovering over startButton */
+#startButton:hover{
+    cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
+}
+
+#fade{ /* # because were accessing an ID and not a class */
+    /* placement */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 4;
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.storyScreen{
+    /* placement */
+   position: fixed; 
+   bottom: 0;       
+   left: 0;       
+   justify-content: center; /* centers horizontally */ 
+   align-items: center; /* centers vertically */ 
+   background-repeat: no repeat;
+   overflow: hidden;
+   position: absolute;
+   z-index: 3;
+
+   /* styling */
+   width: 100%; /* full width */
+   padding: 0;
+   margin: 0;
+   background-color: #393467; 
+   display: none; /* initially hidden */
+}
+
+#storyText{
+    /* placement */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center; /* centers horizontally */ 
+    align-items: center; /* centers vertically */ 
+    z-index: 3;
+
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.1; /* adjusts the spacing between lines of text */
+    font-family: 'Press Start 2P', cursive; /* applies the imported font */
+    white-space: pre-line; /* allows \n to be a new line in js */
+   
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* hides any extra whitespace area outside the text box */
+    display: none;
+}
+
+/* COLOR: is for p text, headings, button labels */
+/* BACKGROUND-COLOR: use when colouring the entire element bo (behind text, padding, borders) */
+/* SCALING: scale(#) where '#' is a multiplier to scale --> 1=100% (no change), 0.5=50% (half as big), 1.2=120% (20% bigger) */

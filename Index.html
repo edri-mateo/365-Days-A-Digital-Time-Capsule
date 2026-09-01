@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!-- tells the browser that this is opened in what version of html we are using -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> First Year Anniversary Wesbite </title>
+    <link rel="stylesheet" href="Index.css"> <!-- css file -->
+</head>
+
+<body> <!-- body class -->
+    <div class="container"> <!-- contains everything in body -->
+        <div id="fade"></div> <!-- fade effect for the background, will be used in javascript to fade in and out -->
+
+        <div class="password"> <!-- password image -->
+            <img src="Images/Enter.png" alt="default-password" width="950" height="400">
+        </div>
+
+        <div class="passwordInput"> <!-- password input-->
+            <!-- typically would have a <span here where we would say what we want the user to input, but that already taken care for us by the image -->
+            <input type="text" maxlength="10" required> <!-- can put a placeholder to put a shadow text inside the textbox to make user access and understanding easier -->
+            <button id="enterButton">ENTER</button>
+            <button id="clearButton"></button>
+        </div>
+    </div>
+
+    <script src="Index.js"></script> <!-- javascript file -->
+</body>
+</html>
+
+<!-- HTML: ORDER MATTERS -->
+<!-- generally want to arrange your HTML in a visual hierachy order -->
