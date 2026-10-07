@@ -9,16 +9,15 @@
 html, body{
     padding: 0;
     margin: 0;
-    background-color: #393467; /* HEX */ 
-    justify-content: center; /* centers horizontally */ 
-    align-items: center; /* centers vertically */ 
-
-    background-repeat: no-repeat; 
+    background-color: #393467; /* HEX */
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
-.container{ 
-    margin: 0; 
+.container{
+    margin: 0;
     padding: 0;
 }
 
@@ -35,6 +34,13 @@ html, body{
     height: auto; /* keep aspect ratio */
 }
 
+/*
+    MAIN MESSAGE
+
+    The actual message can be changed in Main.html.
+    The styling below should not need to be changed.
+*/
+
 .startingText{
     /* placement */
     position: absolute;
@@ -42,6 +48,18 @@ html, body{
     left: 50%;
     transform: translate(-50%, -50%);
     transition: top 2s ease-out; /* animation */
+    width: 90%;
+}
+
+#mainText{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.1; /* adjusts the spacing between lines of text */
+    font-family: 'Press Start 2P', cursive; /* applies the imported font */
+    white-space: pre-line; /* allows \n to be a new line in js */
+    margin: 0;
+    padding: 0;
 }
 
 .displayButton{
@@ -52,7 +70,7 @@ html, body{
     transform: translate(-50%, -50%);
     display: none; /* initially hidden */
 }
-    
+
 #startButton{
     /* placement */
     position: absolute;
@@ -61,6 +79,7 @@ html, body{
     transform: translate(-50%, -50%);
     z-index: 3;
 
+    /* styling */
     width: 155px;
     height: 70px;
     opacity: 0; /* want it to be hidden (only for clicking purposes) */
@@ -78,9 +97,10 @@ html, body{
     top: 0%;
     left: 0%;
     z-index: 4;
-
     height: 100%;
     width: 100%;
+
+    /* styling */
     background-color: black;
     opacity: 1;
     transition: opacity 2s linear;
@@ -88,22 +108,22 @@ html, body{
 
 .storyScreen{
     /* placement */
-   position: fixed; 
-   bottom: 0;       
-   left: 0;       
-   justify-content: center; /* centers horizontally */ 
-   align-items: center; /* centers vertically */ 
-   background-repeat: no repeat;
-   overflow: hidden;
-   position: absolute;
-   z-index: 3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    background-repeat: no repeat;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
 
-   /* styling */
-   width: 100%; /* full width */
-   padding: 0;
-   margin: 0;
-   background-color: #393467; 
-   display: none; /* initially hidden */
+    /* styling */
+    width: 100%; /* full width */
+    padding: 0;
+    margin: 0;
+    background-color: #393467;
+    display: none; /* initially hidden */
 }
 
 #storyText{
@@ -112,17 +132,17 @@ html, body{
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    justify-content: center; /* centers horizontally */ 
-    align-items: center; /* centers vertically */ 
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
     z-index: 3;
 
+    /* styling */
     color: white;
     font-size: 30px;
     text-align: center;
     line-height: 1.1; /* adjusts the spacing between lines of text */
     font-family: 'Press Start 2P', cursive; /* applies the imported font */
     white-space: pre-line; /* allows \n to be a new line in js */
-   
     margin: 0;
     padding: 0;
     overflow: hidden; /* hides any extra whitespace area outside the text box */

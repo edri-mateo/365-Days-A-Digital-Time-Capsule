@@ -1,4 +1,4 @@
-/* can @import url('https://fonts.googleapis.com/ whatever the link of the font you want */
+/* can @import url('https://fonts.googleapis.com/') whatever the link of the font you want */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 *{ /* the universal selector which applies styles to all elements */
@@ -15,36 +15,37 @@ html, body{
     background-size: 110%; /* cover: Ensures the image covers the entire screen, 100%: Keeps the image scaled to the full width */
     background-repeat: no-repeat; /* Ensures the image doesn't repeat */
     overflow: hidden; /* Prevents scrolling if extra space is created */
-    
     justify-content: center; /* centers the content horizontally */
     align-items: center; /* centers the content vertically */
 }
 
-.container{ 
-    margin: auto; 
+.container{
+    margin: auto;
 }
 
 .password img{ /* NOTE: we need to state that were styling the IMAGE since .password refers to the whole class */
+    /* placement */
     position: absolute; /* Positions the .password element (OTHER ELEMENTS WILL ACT LIKE ITS NOT THERE) */
     top: 44.5%; /* Centers vertically relative to the container */
     left: 52%; /* Centers horizontally relative to the container */
     transform: translate(-50%, -50%); /* Adjusts to center the element exactly */
-    justify-content: center; /* centers horizontally */ 
-    align-items: center; /* centers vertically */ 
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
 
-     /* padding: 120px 250px; /* padding is for INTERNAL spacing only (adds space inside an element and doesnt move the element itself, just increases the size of the element by adding space around the content): vertical, horizontal */
-     /* margin-top: 120px; */
-     /* margin-left: 250px; */
- }
+    /* padding: 120px 250px; /* padding is for INTERNAL spacing only (adds space inside an element and doesnt move the element itself, just increases the size of the element by adding space around the content): vertical, horizontal */
+    /* margin-top: 120px; */
+    /* margin-left: 250px; */
+}
 
 input{
     /* placement */
-    position: absolute; 
+    position: absolute;
     top: 46.4%;
     left: 51.5%;
-    transform: translate(-50%, -50%); 
-    z-index: 2; /* Ensures the input field is on top of the .password element (NOTE: z-index only works if you set position to relative, aboslute, fixed, or sticky) */
-    
+    transform: translate(-50%, -50%);
+
+    z-index: 2; /* Ensures the input field is on top of the .password element (NOTE: z-index only works if you set position to relative, absolute, fixed, or sticky) */
+
     /* styling */
     width: 260px;
     height: 33px;
@@ -56,10 +57,10 @@ input{
 
 #enterButton{
     /* placement */
-    position: absolute; 
+    position: absolute;
     top: 57%;
     left: 50.5%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 
     /* styling */
     width: 125px; /* changes button size */
@@ -68,7 +69,7 @@ input{
     border-radius: 5px; /* rounds edges */
     font-size: 19px; /* Changes button text size */
     font-family: 'Press Start 2P', cursive; /* Applies the imported font */
-    background-color: #ffffff; 
+    background-color: #ffffff;
     color: rgb(116, 71, 126);
 }
 
@@ -81,13 +82,14 @@ input{
     position: absolute;
     top: 46.4%;
     left: 32%;
-    transform: translate(-50%, -50%); 
-    z-index: 1; 
+    transform: translate(-50%, -50%);
+    z-index: 1;
 
     /* styling */
     width: 35px;
     height: 35px;
     opacity: 0;
+
     /* NOTE: {display: none} will completely remove the element */
 }
 
@@ -104,7 +106,7 @@ input{
     background-color: black;
     opacity: 0;
     transition: opacity 2s linear; /* Smooth transition for the fade effect (the higher the seconds, the slower the fade) */
-    
+
     /* ease: starts slow, speeds up, slows down
        linear: constant speed
        ease-in: starts slow, speeds up
@@ -112,15 +114,11 @@ input{
        ease-in-out: starts slow, speeds up, slows down (more dramatic than ease) */
 }
 
-
 /* dimensions: 352 height by 755 width (top left: 0,0) */
-
-/* "." is used for classes 
-   "#" is used for id's 
+/* "." is used for classes
+   "#" is used for id's
    nothing is used for elemnts (Eg. body, h1, p, img, button) */
-
 /* ~~~ CSS Syntax: ~~~
    selector {    - the top line is the SELECTOR: targets the HTML element
        property: value;   - the blue is the PROPERTY: specifies what you want to style
    }                      - what comes after the property is the VALUE: defines HOW the property should be styled (eg. red, 16px, 100%) */
-
