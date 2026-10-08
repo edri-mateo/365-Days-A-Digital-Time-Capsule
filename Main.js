@@ -46,7 +46,6 @@ mainText.textContent = MAIN_MESSAGE;
 fadeOut(); // Fade out the black screen immediately
 showText(); // Show the text immediately after fadeOut();
 showDisplayButton(); // Show the display button immediately after fadeOut();
-fadeOut(); 
 
 /* ~~~ BUTTON ANIMATION ~~~ */
 

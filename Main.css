@@ -43,7 +43,7 @@ This section controls the main message animation.
 .startingText{
     /* placement */
     position: absolute;
-    top: 25%; /* where the text ends after the animation */
+    top: 27%; /* where the text ends after the animation */
     left: 50%;
     transform: translate(-50%, -180px); /* starts the text above its final position */
     
@@ -124,7 +124,8 @@ This section controls the fade and story screen.
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 1;
+    opacity: 0;
+    display: none; /* initially hidden */
     transition: opacity 2s linear;
 }
 
@@ -161,7 +162,7 @@ This section controls the fade and story screen.
 #storyText{
     /* placement */
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
     justify-content: center; /* centers horizontally */
