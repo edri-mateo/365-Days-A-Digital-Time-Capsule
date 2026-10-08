@@ -20,7 +20,6 @@ The website includes:
 - Timed messages that appear one at a time
 - Pixel-art visuals and animations
 
----
 
 ## Notes From Author
 
@@ -40,19 +39,38 @@ The project has been designed so that the things you are expected to change are 
 
 You should **not** need to change the CSS, HTML, images, colours, animations, or other JavaScript.
 
----
 
-# 1. Download the Project
 
-Download or clone this project onto your computer.
+# 1. Create Your Own Copy
 
-If you are using GitHub, you can select **Code → Download ZIP** and extract the folder.
+This project is a **GitHub Template Repository**, which means you can create your own copy of it and customize it without changing the original template.
 
-Open the project in a code editor such as **Visual Studio Code**.
+1. Click **Use this template** at the top of this GitHub repository.
+2. Select **Create a new repository**.
+3. Give your repository a name.
+4. Choose whether you want the repository to be **Public** or **Private**.
+5. Click **Create repository**.
 
----
+You now have your own copy of the website!
 
-# 2. Customize Your Website
+
+
+# 2. Open the Project in an IDE
+
+You will need a code editor (IDE) to customize the website. **Visual Studio Code** is recommended, but other code editors will work too.
+
+### Using Visual Studio Code
+
+1. Open your new GitHub repository.
+2. Click the **Code** button.
+3. Select **HTTPS** and copy the URL.
+4. Open Visual Studio Code.
+
+Then clone your repository directly through Visual Studio Code.
+
+
+
+# 3. Customize Your Website
 
 All customizable information is located at the top of the JavaScript files under **CUSTOMIZE HERE**.
 
@@ -136,15 +154,20 @@ const MESSAGE = [
 ];
 ```
 
-**Important:** If you want to include quotation marks inside a message, place a `\` before them:
+**Important #1:** If you want to include quotation marks inside a message, place a `\` before them:
 
 ```js
 ["She said \"I love you!\"", 4000]
 ```
 
----
+**Important #2:** If any piece of text goes off the screen, you can use `\n` to add a new line:
 
-# 3. Things to Keep in Mind
+```js
+const MAIN_MESSAGE = "HAPPY 1ST YEAR ANNIVERSARY! \n (jk it's our 2nd year)"
+```
+
+
+# 4. Things to Keep in Mind
 
 - Do **not** rename, move, or delete the project files or folders.
 - Keep the existing `Images` and `Audio` folders in the same location.
@@ -155,49 +178,57 @@ const MESSAGE = [
 - The website is designed for a desktop/laptop browser and may not look exactly the same on every screen size.
 - The password is part of the JavaScript code, so this is a fun password screen rather than a secure method of protecting sensitive information.
 
----
 
-# 4. Test Your Website
+# 5. Test Your Website
 
 Before sending the website to someone, test it on your own computer.
 
-1. Find `Index.html` in the project folder.
+1. Find `index.html` in the project folder.
 2. Right-click it and select **Copy Path**.
 3. Paste the path into your web browser and press **Enter**.
 
 The website should open in your browser.
 
 Test that:
+- [ ] The password works.
+- [ ] The introduction appears correctly.
+- [ ] The Start button works.
+- [ ] The music plays.
+- [ ] The messages appear in the correct order.
+- [ ] Each message stays on screen for the amount of time you intended.
 
-1. The password works.
-2. The introduction appears correctly.
-3. The Start button works.
-4. The music plays.
-5. The messages appear in the correct order.
-6. Each message stays on screen for the amount of time you intended.
 
----
+# 6. Put the Website Online
 
-# 5. Put the Website Online
+Once you are happy with your website, you can use **GitHub Pages** to make it accessible through a normal website link.
 
-To let someone else open the website from their own browser, you need to host the project online.
+1. Open your GitHub repository.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment**, select:
+   - **Source:** `Deploy from a branch`
+   - **Branch:** `main`
+   - **Folder:** `/ (root)`
+4. Leave **Custom domain** empty.
+5. Save your settings.
+6. Wait a few minutes for GitHub to finish publishing your website.
 
-One simple option is **GitHub Pages**.
+### Your Website URL
 
-1. Create a GitHub repository.
-2. Upload all of the project files and folders.
-3. Make sure `Index.html` is in the main project folder.
-4. Open the repository's **Settings**.
-5. Find **Pages** under the repository settings.
-6. Under **Build and deployment**, select your main branch as the source.
-7. GitHub will provide you with a website link.
+Your website will be available at:
 
-Send that link to the person receiving the gift.
+`https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY-NAME/`
+
+Once it is live, send the link to the person receiving the gift!
 
 They can open the link in their browser, enter the password, and experience the time capsule.
 
----
+**Important:** Make sure the entire project remains in your repository, including the `Images` and `Audio` folders. These files are needed for the website to work correctly.
+
 
 ## Enjoy!
 
-That's it! Customize the three sections marked **CUSTOMIZE HERE**, leave everything else alone, and you should be ready to create your own digital time capsule.
+And that's it! Now you have everything you need to create your own little digital time capsule.
+
+I hope this template helps you make something special for someone you love, whether it's for a birthday, anniversary, holiday, or just because. Sometimes the simplest gifts are the ones that mean the most :)
+
+Have fun making it yours, and I hope whoever receives it loves it as much as you loved making it!
