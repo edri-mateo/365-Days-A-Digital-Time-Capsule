@@ -1,19 +1,21 @@
 /*
- * ============================================================
- * PERSONALIZATION
- * ============================================================
- * Change only the value below to create your own password.
- * The person receiving the website will need to enter this
- * password before they can see the rest of the website.
- */
+============================================================
+CUSTOMIZE HERE
+You can edit the values in this section to make the website your own.
+- Change only the value below to create your own password.
+- The person receiving the website will need to enter this
+- password before they can see the rest of the website.
+============================================================
+*/
 
-const PASSWORD = "NEWPASS123"; // Change this to whatever password you want. Make sure to keep it in quotes, and no longer than 10 characters.
+const PASSWORD = "NEWPASS123"; // Change this to whatever password you want. Make sure to keep it in quotes, and no longer than 20 characters.
 
 
 /*
 ============================================================
 WARNING: DO NOT EDIT BELOW THIS LINE
-If you are unfamiliar with HTML, CSS, and JavaScript, it is recommended that you do not edit anything below this point. If you are familiar with these languages, feel free to explore the code and make changes as you see fit.
+If you are unfamiliar with HTML, CSS, and JavaScript, it is recommended that you do not edit anything below this point. 
+If you are familiar with these languages, feel free to explore the code and make changes as you see fit.
 ============================================================
 */
 

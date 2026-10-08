@@ -1,7 +1,8 @@
 ---
 Template: Digital Time Capsule Gift
 Authour: Edrielle Mateo
-Date: Fall 2026
+Original Creation: August 2025
+Template Creation: October 2026
 ---
 
 # Overview
@@ -21,321 +22,182 @@ The website includes:
 
 ---
 
-## Notes From Authour
-This was actually my very first HTML/CSS/JS project, so you will see lots of comments as I learned the ropes of it all. I contemplated removing them for this template but I decided to leave it as a reminder for everyone that we all start somewhere!
+## Notes From Author
+
+This was actually my very first HTML/CSS/JS project, so you will see lots of comments as I learned the ropes of it all. I contemplated removing them for this template, but I decided to leave them as a reminder that we all start somewhere!
 
 ## Before You Start
 
-You do NOT need to know much HTML, CSS, or JavaScript to personalize this project.
+You do **not** need to know much HTML, CSS, or JavaScript to personalize this project.
 
 The project has been designed so that the things you are expected to change are clearly marked in the JavaScript files.
 
 ### The only things you need to customize are:
 
-1. The password
-2. The main message
-3. The story/timer messages
+1. **The password**
+2. **The main message**
+3. **The story/timer messages**
 
-You should not need to change the CSS, HTML, images, colours, animations, or other JavaScript.
+You should **not** need to change the CSS, HTML, images, colours, animations, or other JavaScript.
 
 ---
 
 # 1. Download the Project
 
-* Download or clone the entire project.
+Download or clone this project onto your computer.
 
-* Make sure you keep the folder structure intact.
+If you are using GitHub, you can select **Code → Download ZIP** and extract the folder.
 
-* Do not rename or move these files unless you also update the code that refers to them.
+Open the project in a code editor such as **Visual Studio Code**.
 
 ---
 
-# 2. Change the Password
+# 2. Customize Your Website
 
-Open:
+All customizable information is located at the top of the JavaScript files under **CUSTOMIZE HERE**.
 
-    `index.js`
+### Password
 
-At the very top, you will see:
+Open `Index.js` and find:
 
-    ``` text
-    // ============================================================
-    // CUSTOMIZE YOUR PROJECT HERE
-    // ============================================================
+```js
+const PASSWORD = "NEWPASS123";
+```
 
-    const PASSWORD = "NEWPASS123";
-    ```
+Replace `"NEWPASS123"` with the password you want.
 
-Change the text inside the quotation marks. 
+**Important:**
+- Keep the password inside the quotation marks.
+- The password must be **20 characters max**.
+- The password is case-sensitive.
 
 For example:
 
-    `const PASSWORD = "HAPPYBDAY!";`
+```js
+const PASSWORD = "SUPERSECRET123";
+```
 
-The person receiving the website will need to enter this password before they can continue.
+### Main Message
 
-Keep the password reasonably short (maximum of 10 characters) because the password box has a character limit.
+Open `Main.js` and find:
 
----
+```js
+const MAIN_MESSAGE = "HAPPY BIRTHDAY!";
+```
 
-# 3. Change the Main Message
-
-Open:
-
-    `Main.js`
-
-At the very top, you will see:
-
-    `const MAIN_MESSAGE = "HAPPY BIRTHDAY!";`
-
-Change this to the message you want as soon as they enter the main screen.
+Replace the message with whatever you want displayed during the introduction.
 
 For example:
 
-    const MAIN_MESSAGE = "HAPPY 1ST ANNIVERSARY";
+```js
+const MAIN_MESSAGE = "HAPPY 40TH BIRTHDAY SPONGEBOB!";
+```
 
-The value is also used as the browser page title.
+### Story / Timer Messages
 
-## Important
+In `Main.js`, you will also find:
 
-The large visible message in the opening animation is part of:
+```js
+const MESSAGE = [
+    ["Hi! Here's the first message!", 3000],
+    ["This one is a little longer than the last message, so I need to make it last 6 seconds instead of 3 seconds.", 6000],
+    ["Here's a short one.", 2000],
+    ["Shortest one.", 1000],
+    ["If I want \"quotations\" then I need to use a slash \\", 4000],
+    ["- Love, Your Name", 15000]
+];
+```
 
-    Images/Main_text.png
+Each message follows this format:
 
-That means the visible words inside that image cannot be changed by editing JavaScript alone.
+```js
+["YOUR MESSAGE", TIME]
+```
 
-The `MAIN_MESSAGE` constant is still provided so that the main message is clearly defined in the customization section.
+The time is written in **milliseconds**.
 
-If you want to replace the actual words inside `Main_text.png`, you will need to edit or replace that image separately.
+For reference:
 
----
+- `1000` = 1 second
+- `3000` = 3 seconds
+- `5000` = 5 seconds
+- `10000` = 10 seconds
 
-# 4. Customize the Timer Messages
-
-Open:
-
-    Main.js
-
-At the top, underneath `MAIN_MESSAGE`, you will find:
-
-    const TIMER_MESSAGES = [
-        ["Your first message", 3000],
-        ["Your second message", 5000],
-        ["Your third message", 8000]
-    ];
-
-Each message has two parts:
-
-    ["MESSAGE", TIME]
-
-The first part is the text that appears on the screen.
-
-The second part controls how long the message stays visible.
-
-The time is measured in milliseconds.
-
-    1000 = 1 second
-    3000 = 3 seconds
-    5000 = 5 seconds
-    10000 = 10 seconds
+You can add, remove, or rearrange messages as you wish.
 
 For example:
 
-    ["I love you!", 5000]
+```js
+const MESSAGE = [
+    ["Happy birthday!", 3000],
+    ["I hope you have an amazing day :)", 5000],
+    ["I love you!", 4000],
+    ["- Love, Your Name", 10000]
+];
+```
 
-means that:
+**Important:** If you want to include quotation marks inside a message, place a `\` before them:
 
-> "I love you!"
-
-will stay on screen for 5 seconds.
-
----
-
-## Adding a New Message
-
-You can add as many messages as you want.
-
-For example:
-
-    const TIMER_MESSAGES = [
-        ["Happy anniversary!", 5000],
-
-        ["I am so lucky to have you.", 6000],
-
-        ["Here's to many more years together.", 7000]
-    ];
-
-Make sure each message except the last one has a comma after it.
+```js
+["She said \"I love you!\"", 4000]
+```
 
 ---
 
-## Using Multiple Lines
+# 3. Things to Keep in Mind
 
-You can make a message appear on multiple lines using:
-
-    \n
-
-For example:
-
-    ["I love you.\nTo the moon and back.", 5000]
-
-This will display:
-
-    I love you.
-    To the moon and back.
+- Do **not** rename, move, or delete the project files or folders.
+- Keep the existing `Images` and `Audio` folders in the same location.
+- Do not remove the quotation marks around your customizable text.
+- Passwords are **case-sensitive**.
+- Story message times are measured in **milliseconds**, not seconds.
+- You do not need to change anything outside the sections marked **CUSTOMIZE HERE**.
+- The website is designed for a desktop/laptop browser and may not look exactly the same on every screen size.
+- The password is part of the JavaScript code, so this is a fun password screen rather than a secure method of protecting sensitive information.
 
 ---
 
-# 5. Changing How Long Messages Stay
+# 4. Test Your Website
 
-The second number controls the amount of time each message remains visible.
+Before sending the website to someone, test it on your own computer.
 
-For example:
+1. Find `Index.html` in the project folder.
+2. Right-click it and select **Copy Path**.
+3. Paste the path into your web browser and press **Enter**.
 
-    ["This is a short message.", 3000]
+The website should open in your browser.
 
-The message stays for 3 seconds.
+Test that:
 
-Whereas:
-
-    ["This is a longer message that needs more time to read.", 10000]
-
-gives the reader 10 seconds.
-
-Give longer messages more time so they are comfortable to read.
-
----
-
-# 6. Running the Website
-
-The easiest way to test the project is to open the project folder in a code editor such as Visual Studio Code.
-
-You can then use a local development server.
-
-If you are using Visual Studio Code, you can install the "Live Server" extension.
-
-Then:
-
-1. Open the project folder.
-2. Open `index.html`.
-3. Start the local server.
-4. The website should open in your browser.
-5. Enter your custom password.
-6. Test the entire experience from beginning to end.
+1. The password works.
+2. The introduction appears correctly.
+3. The Start button works.
+4. The music plays.
+5. The messages appear in the correct order.
+6. Each message stays on screen for the amount of time you intended.
 
 ---
 
-# 7. Important: Keep the Folder Structure
+# 5. Put the Website Online
 
-The website uses relative file paths.
+To let someone else open the website from their own browser, you need to host the project online.
 
-For example:
+One simple option is **GitHub Pages**.
 
-    Images/Main.png
+1. Create a GitHub repository.
+2. Upload all of the project files and folders.
+3. Make sure `Index.html` is in the main project folder.
+4. Open the repository's **Settings**.
+5. Find **Pages** under the repository settings.
+6. Under **Build and deployment**, select your main branch as the source.
+7. GitHub will provide you with a website link.
 
-and:
+Send that link to the person receiving the gift.
 
-    Audio/Story.mp3
-
-Because of this, moving or renaming files can cause parts of the website to stop working.
-
-Keep the `Images` and `Audio` folders in the same location as the HTML files.
-
----
-
-# 8. What You Should NOT Change
-
-Unless you know HTML, CSS, and JavaScript, you should leave these files alone:
-
-    index.css
-    Main.css
-    index.html
-    Main.html
-
-The rest of `index.js` and `Main.js` should also be left alone.
-
-The customizable sections are intentionally placed at the top of the JavaScript files.
-
-Look for:
-
-    // CUSTOMIZE YOUR PROJECT HERE
-
-and:
-
-    // DO NOT EDIT BELOW THIS LINE
-
-Everything between those sections is the part you can personalize.
+They can open the link in their browser, enter the password, and experience the time capsule.
 
 ---
 
-# 9. Project Structure
+## Enjoy!
 
-### index.html
-
-The password screen.
-
-### index.css
-
-Controls the appearance and positioning of the password screen.
-
-### index.js
-
-Controls the password and the transition into the main website.
-
-The password is located at the top of this file.
-
-### Main.html
-
-Contains the main anniversary screen and story screen.
-
-### Main.css
-
-Controls the appearance, positioning, animations, and layout of the main screen.
-
-### Main.js
-
-Controls the animations, transitions, music, and personalized story.
-
-The main message and timer messages are located at the top of this file.
-
-### Images/
-
-Contains the artwork used by the website.
-
-### Audio/
-
-Contains the sound effects and background music.
-
----
-
-# 10. Personalization Checklist
-
-Before giving the website to someone, check:
-
-- [ ] I changed the password.
-- [ ] I changed the main message.
-- [ ] I replaced all of the example story messages.
-- [ ] I checked the timing of each message.
-- [ ] I tested the password.
-- [ ] I tested the entire story from beginning to end.
-- [ ] I kept the `Images` folder intact.
-- [ ] I kept the `Audio` folder intact.
-- [ ] I did not accidentally delete or rename any required files.
-
----
-
-# Have Fun With It!
-
-The point of this project isn't to make a technically complicated website.
-
-It's to give someone a little digital time capsule that feels like it was made specifically for them.
-
-Write the things you normally wouldn't put into a regular text message.
-
-Add your inside jokes.
-
-Add memories.
-
-Add little things that only the two of you would understand.
-
-Make it yours.
+That's it! Customize the three sections marked **CUSTOMIZE HERE**, leave everything else alone, and you should be ready to create your own digital time capsule.

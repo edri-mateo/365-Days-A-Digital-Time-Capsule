@@ -1,8 +1,7 @@
 /*
 ============================================================
-PERSONALIZATION
-You can edit the values in this section to make the
-website your own.
+CUSTOMIZE HERE
+You can edit the values in this section to make the website your own.
 ============================================================
 */
 
@@ -23,8 +22,9 @@ const MESSAGE = [
 
 /*
 ============================================================
-DO NOT EDIT THIS SECTION
-This section is required for the website to work correctly.
+WARNING: DO NOT EDIT BELOW THIS LINE
+If you are unfamiliar with HTML, CSS, and JavaScript, it is recommended that you do not edit anything below this point. 
+If you are familiar with these languages, feel free to explore the code and make changes as you see fit.
 ============================================================
 */
 
@@ -132,12 +132,11 @@ function fadeIn(){
 }
 
 function fadeOut(){
-   fadeElement.style.display = "block";
    fadeElement.style.opacity = "0"; // fade out the black screen element
 
    setTimeout(function() {
        fadeElement.style.display = "none"; // make the black screen element invisible after fading out (need this so we can press the physically button wihtout being blocked by the opacity: 0 screen)
-   }, 3000); // wait for 3 seconds to allow the opacity transition to complete
+   }, 2000); // wait for 2 seconds to allow the opacity transition to complete
 }
 
 function showText(){
