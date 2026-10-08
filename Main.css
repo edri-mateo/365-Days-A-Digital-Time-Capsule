@@ -43,7 +43,7 @@ This section controls the main message animation.
 .startingText{
     /* placement */
     position: absolute;
-    top: 35%; /* where the text ends after the animation */
+    top: 25%; /* where the text ends after the animation */
     left: 50%;
     transform: translate(-50%, -180px); /* starts the text above its final position */
     

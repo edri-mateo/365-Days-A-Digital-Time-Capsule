@@ -46,13 +46,13 @@ mainText.textContent = MAIN_MESSAGE;
 fadeOut(); // Fade out the black screen immediately
 showText(); // Show the text immediately after fadeOut();
 showDisplayButton(); // Show the display button immediately after fadeOut();
-
+fadeOut(); 
 
 /* ~~~ BUTTON ANIMATION ~~~ */
 
 button.addEventListener('mouseover', function() {
     displayButton.style.transition = "transform 0.3s ease-out"; // for smooth transition
-    displayButton.style.transform = "translate(-50%, -50%) scale(1.2)"; // 120% of the original size, 20% change
+    displayButton.style.transform = "translate(-50%, -50%) scale(1.1)"; // 120% of the original size, 20% change
 
     // since the CSS properties we want to change are scale AND translate (bc we dont want the button position to change when we scale it), they both are contained by 'transform' and hence we can use the transform property to apply both at once
 });
@@ -69,12 +69,11 @@ button.addEventListener('click', function() {
 
     // Make the button slightly bigger than its hover size to show that it was clicked
     displayButton.style.transition = "transform 0.2s ease-out";
-    displayButton.style.transform = "translate(-50%, -50%) scale(1.40)";
+    displayButton.style.transform = "translate(-50%, -50%) scale(1.2)";
     displayButton.style.transition = "transform 0.2s ease-out";
 
     click.play();
     
-
     // Fade into the story screen
     setTimeout(fadeIn, 1000);
 
