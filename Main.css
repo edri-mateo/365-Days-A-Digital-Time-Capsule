@@ -16,8 +16,8 @@ html, body{
     overflow: hidden;
 }
 
-.container{
-    margin: 0;
+.container{ 
+    margin: 0; 
     padding: 0;
 }
 
@@ -35,20 +35,26 @@ html, body{
 }
 
 /*
-    MAIN MESSAGE
-
-    The actual message can be changed in Main.html.
-    The styling below should not need to be changed.
+============================================================
+DO NOT EDIT THIS SECTION
+This section controls the main message animation.
+============================================================
 */
-
 .startingText{
     /* placement */
     position: absolute;
-    top: -100px; /* start above the screen */
+    top: 35%; /* where the text ends after the animation */
     left: 50%;
-    transform: translate(-50%, -50%);
-    transition: top 2s ease-out; /* animation */
+    transform: translate(-50%, -180px); /* starts the text above its final position */
+    
+    /* animation */
+    opacity: 0;
+    transition: transform 2s ease-out, opacity 1.5s ease-out;
+
+    /* styling */
     width: 90%;
+    text-align: center;
+    z-index: 2;
 }
 
 #mainText{
@@ -62,6 +68,12 @@ html, body{
     padding: 0;
 }
 
+/*
+============================================================
+DO NOT EDIT THIS SECTION
+This section controls the Start button.
+============================================================
+*/
 .displayButton{
     /* placement */
     position: absolute;
@@ -76,7 +88,7 @@ html, body{
     position: absolute;
     top: 65%;
     left: 49.3%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
     z-index: 3;
 
     /* styling */
@@ -84,23 +96,33 @@ html, body{
     height: 70px;
     opacity: 0; /* want it to be hidden (only for clicking purposes) */
     display: none;
+
+    /* animation */
+    transition: transform 0.3s ease-out;
 }
 
 /* hovering over startButton */
 #startButton:hover{
     cursor: pointer; /* changes the cursor to a pointer when hovering over the button */
+    transform: translate(-50%, -50%) scale(1.1);
 }
 
+/*
+============================================================
+DO NOT EDIT THIS SECTION
+This section controls the fade and story screen.
+============================================================
+*/
 #fade{ /* # because were accessing an ID and not a class */
     /* placement */
     position: absolute;
     top: 0%;
     left: 0%;
     z-index: 4;
-    height: 100%;
-    width: 100%;
 
     /* styling */
+    height: 100%;
+    width: 100%;
     background-color: black;
     opacity: 1;
     transition: opacity 2s linear;
@@ -108,22 +130,32 @@ html, body{
 
 .storyScreen{
     /* placement */
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    bottom: 0;      
+    left: 0;      
     justify-content: center; /* centers horizontally */
     align-items: center; /* centers vertically */
-    background-repeat: no repeat;
+    background-repeat: no-repeat;
     overflow: hidden;
-    position: absolute;
     z-index: 3;
 
     /* styling */
-    width: 100%; /* full width */
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
-    background-color: #393467;
+    background-color: #393467; 
     display: none; /* initially hidden */
+}
+
+.storyScreen img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 #storyText{
@@ -145,6 +177,7 @@ html, body{
     white-space: pre-line; /* allows \n to be a new line in js */
     margin: 0;
     padding: 0;
+    width: 90%;
     overflow: hidden; /* hides any extra whitespace area outside the text box */
     display: none;
 }

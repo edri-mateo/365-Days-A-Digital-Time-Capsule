@@ -1,43 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Year Anniversary Website</title>
-    <link rel="stylesheet" href="Main.css"> <!-- css file -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>First Year Anniversary Website</title>
+   <link rel="stylesheet" href="Main.css"> <!-- css file -->
 </head>
-
 <body>
-    <div class="container">
-        <div id="fade"></div>
+   <div class="container">
+       <div id="fade"></div>
 
-        <div class="background">
-            <img src="Images/Main.png" alt="Background" width="1450" height="700">
-            <!-- alt describes the purpose of the image -->
-        </div>
+       <div class="background">
+           <img src="Images/Main.png" alt="Background" width="1450" height="700"> <!-- alt describes the purpose of the image -->
+       </div>
 
-        <!--
-            PERSONALIZATION:
-            Change the text below to your own main message.
-            You do not need to edit the CSS or create an image.
-        -->
-        <div class="startingText">
-            <p id="mainText">HAPPY BIRTHDAY: change here</p>
-        </div>
+       <!--
+       ============================================================
+       DO NOT EDIT THIS SECTION
+       This section controls how the main message is displayed.
+       ============================================================
+       -->
+       <div class="startingText">
+           <p id="mainText"></p>
+       </div>
 
-        <div class="displayButton">
-            <img src="Images/Start_button.png" alt="StartButton" width="950" height="400">
-            <!-- alt describes the purpose of the image -->
+       <div class="displayButton">
+           <img src="Images/Start_button.png" alt="StartButton" width="950" height="400"> <!-- alt describes the purpose of the image -->
+           <button id="startButton"></button>
+       </div>
 
-            <button id="startButton"></button>
-        </div>
+       <div class="storyScreen">
+           <img src="Images/Start_sky.png" alt="StoryScreen" width="1450" height="700"> <!-- alt describes the purpose of the image -->
+           <p id="storyText"></p> <!-- empty text for now -->
+       </div>
+   </div>
 
-        <div class="storyScreen">
-            <img src="Images/Start_sky.png" alt="StoryScreen" width="1450" height="700">
-            <p id="storyText"></p> <!-- empty text for now -->
-        </div>
-    </div>
-
-    <script src="Main.js"></script> <!-- javascript file -->
+   <script src="Main.js"></script> <!-- javascript file -->
 </body>
 </html>
