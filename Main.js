@@ -137,7 +137,7 @@ function fadeOut(){
 
    setTimeout(function() {
        fadeElement.style.display = "none"; // make the black screen element invisible after fading out (need this so we can press the physically button wihtout being blocked by the opacity: 0 screen)
-   }, 2000); // wait for 2 seconds to allow the opacity transition to complete
+   }, 3000); // wait for 3 seconds to allow the opacity transition to complete
 }
 
 function showText(){

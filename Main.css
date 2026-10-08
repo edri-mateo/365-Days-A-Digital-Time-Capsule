@@ -124,8 +124,7 @@ This section controls the fade and story screen.
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0;
-    display: none; /* initially hidden */
+    opacity: 1;
     transition: opacity 2s linear;
 }
 
