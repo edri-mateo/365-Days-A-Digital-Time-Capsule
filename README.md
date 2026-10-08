@@ -1,15 +1,13 @@
 ---
 Template: Digital Time Capsule Gift
-Authour: Edrielle Mateo
+Author: Edrielle Mateo
 Original Creation: August 2025
 Template Creation: October 2026
 ---
 
 # Overview
 
-A small interactive digital time capsule made for someone you love.
-
-This project is designed to be used as a personal template. You can create your own version for a partner, friend, family member, or anyone special to you.
+A small interactive digital time capsule made for someone you love. This project is designed to be used as a personal template. You can create your own version for a partner, friend, family member, or anyone special to you.
 
 The website includes:
 
@@ -40,7 +38,6 @@ The project has been designed so that the things you are expected to change are 
 You should **not** need to change the CSS, HTML, images, colours, animations, or other JavaScript.
 
 
-
 # 1. Create Your Own Copy
 
 This project is a **GitHub Template Repository**, which means you can create your own copy of it and customize it without changing the original template.
@@ -54,25 +51,20 @@ This project is a **GitHub Template Repository**, which means you can create you
 You now have your own copy of the website!
 
 
+# 2. Customize Your Website
 
-# 2. Open the Project in an IDE
-
-You will need a code editor (IDE) to customize the website. **Visual Studio Code** is recommended, but other code editors will work too.
-
-### Using Visual Studio Code
-
-1. Open your new GitHub repository.
-2. Click the **Code** button.
-3. Select **HTTPS** and copy the URL.
-4. Open Visual Studio Code.
-
-Then clone your repository directly through Visual Studio Code.
-
-
-
-# 3. Customize Your Website
+You can make all of your changes **directly on GitHub**. You do not need to download the project or install a code editor.
 
 All customizable information is located at the top of the JavaScript files under **CUSTOMIZE HERE**.
+
+To edit a file:
+
+1. Open the file in your new repository.
+2. Click the **pencil icon** or **Edit this file** button near the top-right of the file.
+3. Make your changes.
+4. Scroll down and click **Commit changes**.
+
+Your changes will now be saved to your repository.
 
 ### Password
 
@@ -85,6 +77,7 @@ const PASSWORD = "NEWPASS123";
 Replace `"NEWPASS123"` with the password you want.
 
 **Important:**
+
 - Keep the password inside the quotation marks.
 - The password must be **20 characters max**.
 - The password is case-sensitive.
@@ -167,7 +160,7 @@ const MAIN_MESSAGE = "HAPPY 1ST YEAR ANNIVERSARY! \n (jk it's our 2nd year)"
 ```
 
 
-# 4. Things to Keep in Mind
+# 3. Things to Keep in Mind
 
 - Do **not** rename, move, or delete the project files or folders.
 - Keep the existing `Images` and `Audio` folders in the same location.
@@ -179,17 +172,14 @@ const MAIN_MESSAGE = "HAPPY 1ST YEAR ANNIVERSARY! \n (jk it's our 2nd year)"
 - The password is part of the JavaScript code, so this is a fun password screen rather than a secure method of protecting sensitive information.
 
 
-# 5. Test Your Website
+# 4. Test Your Website
 
-Before sending the website to someone, test it on your own computer.
+The easiest way to test your website is to use **GitHub Pages**.
 
-1. Find `index.html` in the project folder.
-2. Right-click it and select **Copy Path**.
-3. Paste the path into your web browser and press **Enter**.
-
-The website should open in your browser.
+Once you have made your changes, follow the steps in the next section to publish your website. You can then open the website yourself and test everything before sending the link to someone else.
 
 Test that:
+
 - [ ] The password works.
 - [ ] The introduction appears correctly.
 - [ ] The Start button works.
@@ -198,7 +188,7 @@ Test that:
 - [ ] Each message stays on screen for the amount of time you intended.
 
 
-# 6. Put the Website Online
+# 5. Put the Website Online
 
 Once you are happy with your website, you can use **GitHub Pages** to make it accessible through a normal website link.
 
@@ -227,8 +217,6 @@ They can open the link in their browser, enter the password, and experience the 
 
 ## Enjoy!
 
-And that's it! Now you have everything you need to create your own little digital time capsule.
+And that's it! Now you have everything you need to create your own little digital time capsule. I hope this template helps you make something special for someone you love, whether it's for a birthday, anniversary, holiday, or just because. Sometimes the simplest gifts are the ones that mean the most :)
 
-I hope this template helps you make something special for someone you love, whether it's for a birthday, anniversary, holiday, or just because. Sometimes the simplest gifts are the ones that mean the most :)
-
-Have fun making it yours, and I hope whoever receives it loves it as much as you loved making it!
+Have fun making it yours, and I hope whoever receives it loves it as much as you loved making it <3
