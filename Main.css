@@ -59,7 +59,7 @@ This section controls the main message animation.
 
 #mainText{
     color: white;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     line-height: 1.1; /* adjusts the spacing between lines of text */
     font-family: 'Press Start 2P', cursive; /* applies the imported font */
