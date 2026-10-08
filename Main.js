@@ -69,9 +69,11 @@ button.addEventListener('click', function() {
 
     // Make the button slightly bigger than its hover size to show that it was clicked
     displayButton.style.transition = "transform 0.2s ease-out";
-    displayButton.style.transform = "translate(-50%, -50%) scale(1.25)";
+    displayButton.style.transform = "translate(-50%, -50%) scale(1.40)";
+    displayButton.style.transition = "transform 0.2s ease-out";
 
     click.play();
+    
 
     // Fade into the story screen
     setTimeout(fadeIn, 1000);
@@ -132,6 +134,7 @@ function fadeIn(){
 }
 
 function fadeOut(){
+   fadeElement.style.display = "block";
    fadeElement.style.opacity = "0"; // fade out the black screen element
 
    setTimeout(function() {
