@@ -25,9 +25,7 @@ This was actually my very first HTML/CSS/JS project, so you will see lots of com
 
 ## Before You Start
 
-You do **not** need to know much HTML, CSS, or JavaScript to personalize this project.
-
-The project has been designed so that the things you are expected to change are clearly marked in the JavaScript files.
+You do **not** need to know much HTML, CSS, or JavaScript to personalize this project. The project has been designed so that the things you are expected to change are clearly marked in the JavaScript files.
 
 ### The only things you need to customize are:
 
@@ -53,12 +51,11 @@ You now have your own copy of the website!
 
 # 2. Customize Your Website
 
-You can make all of your changes **directly on GitHub**. You do not need to download the project or install a code editor.
+You can make all of your changes **directly on GitHub**. You do not need to download the project or install a code editor. 
 
 All customizable information is located at the top of the JavaScript files under **CUSTOMIZE HERE**.
 
 To edit a file:
-
 1. Open the file in your new repository.
 2. Click the **pencil icon** or **Edit this file** button near the top-right of the file.
 3. Make your changes.
